@@ -2,3 +2,27 @@
     box-shadow: 40px 4px 40px rgba(0, 0, 0, 0.7);
     /* Gölge ayarları */
 }
+
+.custom-btn {
+    width: 140px;
+    /* Sabit genişlik */
+    height: 35px;
+    /* Sabit yükseklik */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5rem;
+    /* Yazı boyutu */
+    border-color: black;
+    overflow: hidden;
+    /* Taşmayı gizler */
+    text-overflow: ellipsis;
+    /* Uzun metni "..." ile kısaltır */
+    white-space: nowrap;
+    /* Metnin tek satırda kalmasını sağlar */
+}
+
+.custom-all-btn {
+    width: 220px;
+}
