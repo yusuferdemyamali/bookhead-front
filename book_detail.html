@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<!--HEADER BASLANGİC-->
+<div class="container-fluid no-padding" style="margin-top: -25px; margin-bottom: -30px;">
+    <header style="background-color: white;" class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between pb-0 ">
+        <div class="col-md-3 mb-2 mt-0 mb-md-0 text-center">
+            <a href="index.html" class="d-inline-flex  align-items-center link-body-emphasis text-decoration-none">
+                <img src="./assets/logo.png" height="200px" alt="">
+            </a>
+        </div>
+
+        <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-4">
+            <li>
+                <a href="./index.html" class="nav-link px-2  link-secondary">
+                    <i class="bi bi-house" style="font-size: 2rem; color: black; margin-right: 50px;"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="nav-link px-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="bi bi-search" style="font-size: 2rem; color: black;"></i>
+                </a>
+            </li>
+        </ul>
+
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="searchModalLabel">BookHead'te Ara</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="BookHead'te Ara...">
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="background-color: black; color: white; border-color: black;">Ara</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 text-end">
+            <a class="btn btn-outline-primary me-2" href="login.html" role="button" style="font-weight: bold; color: black; background-color: white; border-color: black;">Giriş Yap</a>
+            <a class="btn btn-outline-primary me-2" href="register.html" role="button" style="font-weight: bold; color: white; background-color: black; border-color: black;">Kayıt Ol</a>
+        </div>
+    </header>
+</div>
+<!--HEADER SONU-->
+
+<div class="row my-5 mx-5 gx-2 gx-lg-5 align-items-center">
+    <div class="col-md-5">
+        <div class="book-cover-wrapper">
+            <img class="card-img-top mb-5" src="https://img.kitapyurdu.com/v1/getImage/fn:11262270/wh:true/wi:500" width="300px" height="600px" alt="...">
+            <img class="book-back" src="https://www.canyayinlari.com/productimages/118471/big/9789750724756_171.jpg" alt="Kitap Arka Kapağı">
+        </div>
+        </div>
+    <div class="col-md-7">
+        <div class="small mb-1">ISBN: 9789750724756 </div>
+        <h1 class="display-5 fw-bolder">Albert Camus <br><span>Yabancı</span></h1>
+        <div class="fs-5 mb-5">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+        <p class="lead">
+            Albert Camus'nun Yabancı romanı, Cezayir'de yaşayan Fransız bir memur olan Meursault'nun anlamsızlık ve yabancılaşma dolu hayatını konu alır. Roman, Meursault'nun annesinin ölümüne tepkisiz kalışıyla başlar ve onun hayat karşısındaki duyarsızlığını işler. Daha sonra bir cinayet işler ve yargılanırken çevresindekiler, onun suçu kadar hayatı algılayışını da sorgular. Meursault, toplumsal normlara aykırı bir insan olduğu için mahkum edilir. Camus, bu eserinde absürd felsefesini ve insanın yaşamın anlamsızlığına karşı özgürlüğünü vurgular.
+        </p>
+        <div class="row my-5 mx-5 gx-2 gx-lg-5">
+            <button data-bs-toggle="collapse" data-bs-target="#fiyat" style="padding: 5px 15px" class="col-md btn btn-outline-dark flex-shrink-0 mx-1" type="button">
+                <i class="bi-cart-fill me-1"></i>
+                En Uygun Fiyat
+            </button>
+            <button data-bs-toggle="collapse" data-bs-target="#yorum" style="padding: 5px 15px" class="col-md btn btn-outline-dark flex-shrink-0 mx-1" type="button">
+                <i class="bi-book-fill me-1"></i>
+                Okur Yorumları
+            </button>
+
+            <button data-bs-toggle="collapse" data-bs-target="#bilgi" style="padding: 5px 15px" class="col-md btn btn-outline-dark flex-shrink-0 mx-1" type="button">
+                <i class="bi bi-question-circle-fill me-1"></i>
+                İlginç Bilgiler
+            </button>
+            <div id="fiyat" class="collapse">
+                En ucuz şurada cart curt
+                <hr>
+            </div>
+            <div id="yorum" class="collapse">
+                böyle yorumlar var cart curt
+                <hr>
+            </div>
+            <div id="bilgi" class="collapse">
+                böyle ilginç bilgiler var cart curt
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--FOOTER BAŞLANGIÇ-->
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2024 BookHead</p>
+
+        <a href="index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <img src="./assets/logo.png" height="100px" alt="">
+        </a>
+
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Ana Sayfa</a></li>
+            <li class="nav-item"><a href="categories.html" class="nav-link px-2 text-body-secondary">Kitaplar</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">Hakkımızda</a></li>
+        </ul>
+    </footer>
+</div>
+<!--FOOTER SONU-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
